@@ -1,5 +1,5 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	{{ hello }}
+	{{ function('do_shortcode', '[hello]') }}
 {% endblock %}

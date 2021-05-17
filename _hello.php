@@ -1,7 +1,7 @@
 <?php
 class Hello {
   public function __construct() {
-    add_shortcode( 'hello', 'addShortcode' );
+    add_shortcode( 'hello', array( $this, 'addShortcode' ));
   }
 
   private function renderForm() {
